@@ -1,30 +1,20 @@
 
 @extends('layouts.main')
 
-@section('title', 'Comic')
+@section('title', $comic->title)
 
 @section('main-content')
 
-        <div class="container">
-            <div class="table">
-                <div class="table-header">
-                    <div class="header__item"><a id="name" class="filter__link" href="#">Title</a></div>
-                    <div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Price</a></div>
-                    <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Sale Date</a></div>
-                    <div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">Type</a></div>
-                    <div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">Description</a></div>
-                </div>
-                <div class="table-content">
-                    <div class="table-row">
-                        <div class="table-data"><a href="">{{$comic->title}}</a></div>
-                        <div class="table-data"><a href="">{{$comic->price}}</a></div>
-                        <div class="table-data"><a href="">{{$comic->sale_date}}</a></div>
-                        <div class="table-data"><a href="">{{$comic->type}}</a></div>
-                        <div class="table-data"><a href="">{{$comic->description}}</a></div>
-                    </div>
-                </div>
+        <div class="container-comic">
 
-            </div>
+                        <div class="comic-img"><img src={{$comic->thumb}} alt="cover of {{$comic->title}}"></div>
+                        <div class="comic-title"><h1>{{$comic->title}}</h1></div>
+                        <div class="comic-description">{{$comic->description}}</div>
+                        <div class="comic-price"><h3>Price: {{$comic->price}}</h3></div>
+                        <div class="comic-sale-date"><h3>On Sale Date: {{$comic->sale_date}}</h3></div>
+                        <div class="comic-type"><h3>Type: {{$comic->type}}</h3></div>
+
+
         </div>
 
 @endsection

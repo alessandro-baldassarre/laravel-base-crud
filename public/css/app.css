@@ -115,3 +115,11 @@ form button {
   margin: 0 auto;
 }
 
+.container-comic div {
+  margin-bottom: 2rem;
+}
+
+.container-comic div.comic-img {
+  text-align: center;
+}
+
