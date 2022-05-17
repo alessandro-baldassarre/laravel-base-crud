@@ -13,6 +13,7 @@
                         <div class="comic-price"><h3>Price: {{$comic->price}}</h3></div>
                         <div class="comic-sale-date"><h3>On Sale Date: {{$comic->sale_date}}</h3></div>
                         <div class="comic-type"><h3>Type: {{$comic->type}}</h3></div>
+                        <div class="comic-button"><a href="{{route("comics.index")}}"><button>Back to Comics</button></a></div>
 
 
         </div>

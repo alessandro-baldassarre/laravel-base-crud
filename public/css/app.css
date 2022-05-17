@@ -115,11 +115,52 @@ form button {
   margin: 0 auto;
 }
 
+div.pagination-links {
+  padding-top: 2rem;
+}
+
+div.pagination-links ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+div.pagination-links ul a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+div.pagination-links ul li.active {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+}
+
+.container-comic {
+  padding: 2rem;
+}
+
 .container-comic div {
   margin-bottom: 2rem;
 }
 
 .container-comic div.comic-img {
   text-align: center;
+}
+
+.container-comic div.comic-button {
+  text-align: center;
+}
+
+.container-comic div.comic-button button {
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 

@@ -19,11 +19,11 @@
                     @foreach ($comics as $comic)
                     <div class="table-row">
                         <div class="table-data"><a href="{{route("comics.show", $comic->id)}}">{{$comic->title}}</a></div>
-                        <div class="table-data"><a href="">{{$comic->price}}</a></div>
-                        <div class="table-data"><a href="">{{$comic->sale_date}}</a></div>
-                        <div class="table-data"><a href="">{{$comic->type}}</a></div>
-                        <div class="table-data"><a href="">{{substr($comic->description, 0,100). '...'}}</a></div>
-                        <div class="table-data"><a href=""><button>Edit</button><button>Delete</button></a></div>
+                        <div class="table-data"><a href="{{route("comics.show", $comic->id)}}">{{$comic->price}}</a></div>
+                        <div class="table-data"><a href="{{route("comics.show", $comic->id)}}">{{$comic->sale_date}}</a></div>
+                        <div class="table-data"><a href="{{route("comics.show", $comic->id)}}">{{$comic->type}}</a></div>
+                        <div class="table-data"><a href="{{route("comics.show", $comic->id)}}">{{substr($comic->description, 0,100). '...'}}</a></div>
+                        <div class="table-data"><a href="{{route("comics.show", $comic->id)}}"><button>Edit</button><button>Delete</button></a></div>
                     </div>
                      @endforeach
                 </div>

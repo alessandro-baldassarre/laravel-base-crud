@@ -21,6 +21,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin:0;
 }
 
+
 .container {
 	max-width: 1000px;
 	margin-right:auto;
@@ -114,13 +115,52 @@ form{
     }
 }
 
+div.pagination-links{
+
+    padding-top: 2rem;
+    ul{
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+
+        a{
+            margin: 0 .5rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        li.active {
+                margin: 0 .5rem;
+                text-decoration: none;
+                color: white;
+                font-size: 1.5rem;
+                background-color: rgba($color: #000000, $alpha: 0.4);
+                padding: .5rem 1rem;
+                border-radius: 50%;
+        }
+    }
+
+}
+
+
+
 .container-comic{
+    padding: 2rem;
     div{
         margin-bottom: 2rem;
     }
 
     div.comic-img{
         text-align: center;
+    }
+    div.comic-button{
+        text-align: center;
+        button{
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
     }
 
 }
