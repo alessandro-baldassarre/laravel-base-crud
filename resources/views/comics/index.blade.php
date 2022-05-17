@@ -13,6 +13,7 @@
                     <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Sale Date</a></div>
                     <div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">Type</a></div>
                     <div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">Description</a></div>
+                    <div class="header__item"><a id="total" class="filter__link filter__link--number" href="{{route("comics.create")}}"><button>Add New Comic</button></a></div>
                 </div>
                 <div class="table-content">
                     @foreach ($comics as $comic)
@@ -22,6 +23,7 @@
                         <div class="table-data"><a href="">{{$comic->sale_date}}</a></div>
                         <div class="table-data"><a href="">{{$comic->type}}</a></div>
                         <div class="table-data"><a href="">{{substr($comic->description, 0,100). '...'}}</a></div>
+                        <div class="table-data"><a href=""><button>Edit</button><button>Delete</button></a></div>
                     </div>
                      @endforeach
                 </div>

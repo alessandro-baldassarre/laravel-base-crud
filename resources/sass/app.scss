@@ -75,6 +75,9 @@ h1,h2,h3,h4,h5,h6 {
 	padding-left:$base-spacing-unit;
 	padding-right:$base-spacing-unit;
     cursor:default;
+    button{
+        cursor: pointer;
+    }
 
 	&::after {
 		content:'';
@@ -94,4 +97,19 @@ h1,h2,h3,h4,h5,h6 {
 		content: '(asc)';
 	}
 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 4rem;
+    margin: 0 auto;
+    input{
+        margin-bottom: 1rem;
+    }
+    button{
+        width: 20%;
+        margin: 0 auto;
+    }
 }

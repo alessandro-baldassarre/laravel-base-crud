@@ -76,6 +76,10 @@ h6 {
   cursor: default;
 }
 
+.filter__link button {
+  cursor: pointer;
+}
+
 .filter__link::after {
   content: "";
   position: absolute;
@@ -92,5 +96,22 @@ h6 {
 
 .filter__link.asc::after {
   content: "(asc)";
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 4rem;
+  margin: 0 auto;
+}
+
+form input {
+  margin-bottom: 1rem;
+}
+
+form button {
+  width: 20%;
+  margin: 0 auto;
 }
 
