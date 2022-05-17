@@ -25,7 +25,7 @@
 
 
                         <label for="price">Price</label>
-                        <input type="number" name="price" id="price">
+                        <input type="float" name="price" id="price">
 
 
                         <label for="sale_date">Sale Date</label>
