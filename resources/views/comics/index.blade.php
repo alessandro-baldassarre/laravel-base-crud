@@ -17,7 +17,7 @@
                 <div class="table-content">
                     @foreach ($comics as $comic)
                     <div class="table-row">
-                        <div class="table-data"><a href="">{{$comic->title}}</a></div>
+                        <div class="table-data"><a href="{{route("comics.show", $comic->id)}}">{{$comic->title}}</a></div>
                         <div class="table-data"><a href="">{{$comic->price}}</a></div>
                         <div class="table-data"><a href="">{{$comic->sale_date}}</a></div>
                         <div class="table-data"><a href="">{{$comic->type}}</a></div>
